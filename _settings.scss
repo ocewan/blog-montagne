@@ -1,0 +1,41 @@
+// fonts
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url(./assets/fonts/Merriweather-Light.ttf);
+}
+
+// variables
+$color1: rgba(182, 182, 182, 0.575);
+$white: rgb(243, 243, 243);
+$black: rgb(20, 20, 20);
+
+// mixin
+@mixin centerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin widthMedia {
+    @media screen and (max-width:1100px) {
+        max-width: 650px;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/images/bg.jpg) fixed center/cover;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+}
