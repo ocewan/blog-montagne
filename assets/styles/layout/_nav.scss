@@ -1,0 +1,50 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: rgba(243, 243, 243, 0.162);
+    @include widthMedia();
+
+    @media screen and (max-width:650px) {
+        max-width: 400px;
+    }
+
+    ul {
+        @include centerChild();
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .nav-left li:hover {
+        background: $white;
+        transition: 0.3s;
+    }
+
+    a {
+        text-decoration: none;
+        letter-spacing: 1px;
+        display: block;
+        padding: 20px;
+        color: $white;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $black;
+            transition: 0.3s;
+        }
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+
+    .nav-right {
+        @media screen and (max-width:650px) {
+            display: none;
+        }
+    }
+}

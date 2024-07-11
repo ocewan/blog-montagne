@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(./assets/fonts/Merriweather-Light.ttf);
+}
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/images/bg.jpg) fixed center/cover;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  margin: 50px;
+  background: none;
+  border: 2px solid rgb(20, 20, 20);
+}
+button:hover {
+  border: 2px solid transparent;
+  background: rgba(182, 182, 182, 0.575);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button a {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  font-weight: 700;
+}
+
+header {
+  color: rgb(243, 243, 243);
+  text-align: center;
+  margin: 200px 100px 100px 100px;
+  padding: 20px;
+}
+header h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 650px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+header p {
+  font-family: "Merriweather";
+  font-style: italic;
+  margin: 30px;
+}
+header i {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  color: rgb(243, 243, 243);
+  border: 2px solid rgb(243, 243, 243);
+  border-radius: 80px;
+  font-size: 1.3rem;
+}
+header i:hover {
+  background: rgb(243, 243, 243);
+  color: rgb(20, 20, 20);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(243, 243, 243, 0.162);
+}
+@media screen and (max-width: 1100px) {
+  nav {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav {
+    max-width: 400px;
+  }
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav .nav-left li:hover {
+  background: rgb(243, 243, 243);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+  padding: 20px;
+  color: rgb(243, 243, 243);
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: rgb(20, 20, 20);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav i {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 650px) {
+  nav .nav-right {
+    display: none;
+  }
+}
+
+.section-1 {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgb(243, 243, 243);
+}
+@media screen and (max-width: 1100px) {
+  .section-1 {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section-1 {
+    max-width: 400px;
+  }
+}
+.section-1 h3 {
+  font-family: "Merriweather";
+  font-size: 0.9rem;
+  font-weight: normal;
+  padding: 50px;
+  position: relative;
+}
+.section-1 h3::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 30%;
+  top: 50%;
+  left: 10%;
+  background: rgba(182, 182, 182, 0.575);
+}
+@media screen and (max-width: 650px) {
+  .section-1 h3::before {
+    display: none;
+  }
+}
+.section-1 h3::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 30%;
+  top: 50%;
+  right: 10%;
+  background: rgba(182, 182, 182, 0.575);
+}
+@media screen and (max-width: 650px) {
+  .section-1 h3::after {
+    display: none;
+  }
+}
+.section-1 h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.section-1 p {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-size: 0.8rem;
+  margin: 30px;
+  line-height: 40px;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.section-1 .img-container {
+  background: url(./assets/images/pic01.jpg) center/cover;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-2 {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgb(243, 243, 243);
+}
+@media screen and (max-width: 1100px) {
+  .section-2 {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section-2 {
+    max-width: 400px;
+  }
+}
+.section-2 .section-2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(182, 182, 182, 0.575);
+}
+@media screen and (max-width: 650px) {
+  .section-2 .section-2-container {
+    display: block;
+  }
+}
+.section-2 .section-2-container .section-2-left,
+.section-2 .section-2-container .section-2-right {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid rgba(182, 182, 182, 0.575);
+}
+.section-2 .section-2-container h5 {
+  font-family: "Merriweather";
+  font-weight: normal;
+  text-align: center;
+}
+.section-2 .section-2-container h4 {
+  text-transform: uppercase;
+  margin: 40px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.section-2 .section-2-container img {
+  max-width: 100%;
+}
+.section-2 .section-2-container p {
+  margin: 30px 0;
+  line-height: 30px;
+  font-family: "Merriweather";
+  font-weight: normal;
+}
+
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgb(243, 243, 243);
+}
+@media screen and (max-width: 1100px) {
+  footer {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    max-width: 400px;
+  }
+}
+footer .footer-container {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 650px) {
+  footer .footer-container {
+    display: block;
+  }
+}
+footer .footer-container label,
+footer .footer-container h6 {
+  font-family: "Inter";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+footer .footer-container .footer-form {
+  border-right: 1px solid rgba(182, 182, 182, 0.575);
+  padding: 40px;
+}
+footer .footer-container .footer-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+footer .footer-container .footer-form form input,
+footer .footer-container .footer-form form textarea {
+  margin: 20px 0;
+  padding: 20px;
+  text-decoration: none;
+  border: 1px solid rgba(182, 182, 182, 0.575);
+  border-radius: 2px;
+  background: transparent;
+  resize: none;
+}
+footer .footer-container .footer-contact {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+footer .footer-container .footer-contact div {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(182, 182, 182, 0.575);
+}
+footer .footer-container .footer-contact div h6 {
+  padding: 40px;
+}
+footer .footer-container .footer-contact div p {
+  font-family: "Merriweather";
+  padding: 40px;
+}
+footer .footer-container .footer-contact div ul {
+  padding: 40px;
+}
+footer .footer-container .footer-contact div ul li {
+  display: inline;
+  padding: 0 15px 0 0;
+}
+footer .footer-container .footer-contact div ul li i {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  color: rgb(20, 20, 20);
+  border: 1px solid rgba(182, 182, 182, 0.575);
+  border-radius: 80px;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=index.css.map */
